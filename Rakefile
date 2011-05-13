@@ -10,7 +10,7 @@ begin
     gem.homepage = "http://viddler.rubyforge.org"
     gem.authors = ["Ilya Sabanin"]
 
-    gem.add_dependency("activesupport", ">= 3.0.0.rc")
+    gem.add_dependency("activesupport")
     gem.add_dependency("rest-client")
     gem.add_dependency("mime-types")
 
