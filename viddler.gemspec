@@ -72,6 +72,7 @@ Currently implemented API methods:
     "lib/viddler/user.rb",
     "lib/viddler/version.rb",
     "lib/viddler/video.rb",
+    "riddler.gemspec",
     "spec/client_spec.rb",
     "spec/models/list_spec.rb",
     "spec/models/playlist_list_spec.rb",
@@ -98,15 +99,21 @@ Currently implemented API methods:
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<riddler>, [">= 0"])
+      s.add_runtime_dependency(%q<viddler>, [">= 0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_runtime_dependency(%q<rest-client>, [">= 0"])
       s.add_runtime_dependency(%q<mime-types>, [">= 0"])
     else
+      s.add_dependency(%q<riddler>, [">= 0"])
+      s.add_dependency(%q<viddler>, [">= 0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<rest-client>, [">= 0"])
       s.add_dependency(%q<mime-types>, [">= 0"])
     end
   else
+    s.add_dependency(%q<riddler>, [">= 0"])
+    s.add_dependency(%q<viddler>, [">= 0"])
     s.add_dependency(%q<activesupport>, [">= 0"])
     s.add_dependency(%q<rest-client>, [">= 0"])
     s.add_dependency(%q<mime-types>, [">= 0"])

@@ -1,0 +1,39 @@
+PATH
+  remote: .
+  specs:
+    riddler (0.1.0)
+      activesupport (~> 3.0.0)
+      json
+      rest-client
+    viddler (0.3.0)
+      activesupport
+      mime-types
+      rest-client
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    ZenTest (4.5.0)
+    activesupport (3.0.7)
+    diff-lcs (1.1.2)
+    json (1.5.1)
+    mime-types (1.16)
+    rest-client (1.6.1)
+      mime-types (>= 1.16)
+    rspec (2.6.0)
+      rspec-core (~> 2.6.0)
+      rspec-expectations (~> 2.6.0)
+      rspec-mocks (~> 2.6.0)
+    rspec-core (2.6.0)
+    rspec-expectations (2.6.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ZenTest
+  riddler!
+  rspec
+  viddler!

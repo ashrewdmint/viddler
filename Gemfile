@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
-gemspec "riddler"
+gemspec :name => "riddler"
+gemspec :name => "viddler"
 
 group :test do
   gem "rspec"
